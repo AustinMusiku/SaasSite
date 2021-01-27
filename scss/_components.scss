@@ -1,0 +1,159 @@
+// BUTTONS
+.btn{
+    padding: 1em 2.5em;
+    border: 1px solid black;
+
+}
+.cta{
+    background-color: gray;
+    border: none;
+}
+
+// ul
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+// NAV
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+
+    .nav-links{
+        max-width: 70%;
+
+        .nav-link{
+            padding: 1em 2em;
+        }
+    }
+}
+
+
+// TRAY
+
+.tray{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .tray-item{
+        max-width: 33.33%;
+
+        img{
+            max-height: 100px;
+        }
+        .tray-text{
+            padding: 1em;
+            text-align: center;
+        }
+    }
+
+    .tray-item-benefits{
+        padding: 2em;
+    }
+}
+
+
+// BANNER
+
+.banners{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .banner{
+        flex-direction: row;
+    }
+    .banner-reverse{
+        flex-direction: row-reverse;
+    }
+
+    .banner,
+    .banner-reverse{
+        display: flex;
+        align-items: center;
+
+        img{
+            height: 300px;
+            width: 50%;
+        }
+    
+        .banner-text{
+            padding: 2em;
+        }
+    }
+}
+
+
+// DECK
+
+.deck{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+    width: 100%;
+
+    .card{
+        padding: 2em;
+        max-width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+
+        .card-header,
+        .card-body{
+            text-align: center;
+        }
+        .card-header{
+
+        }
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+        }
+    }
+}
+
+
+// NEWSLETTER
+
+.newsletter{
+
+    .container{
+        text-align: center;
+    }
+}
+
+
+// FOOTER
+footer{
+    background: grey;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+        }
+    }
+
+    .footer-bottomline{
+        grid-column: 1/5;
+        padding: 3em 0 0;
+    }
+}

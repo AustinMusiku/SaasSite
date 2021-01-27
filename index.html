@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instop Serverless</title>
 
+    <link rel="stylesheet" href="./css/style.css">
+
     <script src="https://kit.fontawesome.com/2343bc677e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,12 +16,12 @@
                 <div class="logo">
                     <i class="fas fa-space-shuttle fa-rotate-270"></i><span>Instop</span>
                 </div>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="" class="btn cta">Create account</a></li>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="">Home</a></li>
+                    <li><a class="nav-link" href="">Features</a></li>
+                    <li><a class="nav-link" href="">Pricing</a></li>
+                    <li><a class="nav-link" href="">Blog</a></li>
+                    <li><a class="nav-link" href="" class="btn cta">Create account</a></li>
                 </ul>
             </nav>
             <div class="hero">
@@ -39,11 +41,11 @@
     <section class="partners grid">
         <div class="container">
             <div class="tray">
-                <i class="fab fa-instagram .tray-item"></i>
-                <i class="fab fa-instagram .tray-item"></i>
-                <i class="fab fa-instagram .tray-item"></i>
-                <i class="fab fa-instagram .tray-item"></i>
-                <i class="fab fa-instagram .tray-item"></i>
+                <i class="fab fa-google .tray-item"></i>
+                <i class="fab fa-facebook .tray-item"></i>
+                <i class="fab fa-aws .tray-item"></i>
+                <i class="fab fa-twitch .tray-item"></i>
+                <i class="fab fa-xbox .tray-item"></i>
             </div>
         </div>
     </section>
@@ -62,8 +64,8 @@
                     </div>
                 </div>
 
-                <div class="banner">
-                    <img src="./assets/images/dark_analytics.svg" alt="">
+                <div class="banner-reverse">
+                    <img class="" src="./assets/images/dark_analytics.svg" alt="">
                     <div class="banner-text">
                         <h2>In-depth metrics</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at dui elementum, placerat nulla et, efficitur magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -88,7 +90,7 @@
         <div class="container">
             <h2 class="section-heading">Benefits</h2>
             <div class="tray">
-                <div class="tray-item">
+                <div class="tray-item tray-item-benefits">
                     <img src="./assets/images/Credit_card.svg" alt="">
                     <div class="tray-text">
                         <h3>Benchmarks</h3>
@@ -96,7 +98,7 @@
                     </div>
                 </div>
 
-                <div class="tray-item">
+                <div class="tray-item tray-item-benefits">
                     <img src="./assets/images/Calculator.svg" alt="">
                     <div class="tray-text">
                         <h3>Pricing Audit</h3>
@@ -104,7 +106,7 @@
                     </div>
                 </div>
 
-                <div class="tray-item">
+                <div class="tray-item tray-item-benefits">
                     <img src="./assets/images/Add_files.svg" alt="">
                     <div class="tray-text">
                         <h3>Retention Audit</h3>
@@ -121,46 +123,44 @@
             <h2 class="section-heading">Get the right plan
                 for future product.</h2>
             <div class="deck">
+
                 <div class="card">
                     <div class="card-header">
-
+                        <p>Starter</p>
+                        <h1>Free <span></span></h1>
                     </div>
 
-                    <div class="card-body">
-                        <ul>
-                            <li>1 Website</li>
-                            <li>5 GB Hosting</li>
-                            <li>Limited Support</li>
-                        </ul>
-                    </div>
+                    <ul class="card-body">
+                        <li>1 Website</li>
+                        <li>5 GB Hosting</li>
+                        <li>Limited Support</li>
+                    </ul>
                 </div>
 
                 <div class="card best">
                     <div class="card-header">
-
+                        <p>Starter</p>
+                        <h1>$29/month<span></span></h1>
                     </div>
 
-                    <div class="card-body">
-                        <ul>
-                            <li>1 Website</li>
-                            <li>5 GB Hosting</li>
-                            <li>Limited Support</li>
-                        </ul>
-                    </div>
+                    <ul class="card-body">
+                        <li>1 Website</li>
+                        <li>5 GB Hosting</li>
+                        <li>Limited Support</li>
+                    </ul>
                 </div>
 
                 <div class="card">
                     <div class="card-header">
-
+                        <p>Starter</p>
+                        <h1>$49/month<span></span></h1>
                     </div>
 
-                    <div class="card-body">
-                        <ul>
-                            <li>1 Website</li>
-                            <li>5 GB Hosting</li>
-                            <li>Limited Support</li>
-                        </ul>
-                    </div>
+                    <ul class="card-body">
+                        <li>1 Website</li>
+                        <li>5 GB Hosting</li>
+                        <li>Limited Support</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -171,7 +171,7 @@
         <div class="container">
             <h2>Sign up to our newsletter</h2>
             <div class="newsletter">
-                <input type="text">
+                <input type="text" placeholder="Email">
                 <a href="#" class="btn cta">Submit</a>
             </div>
         </div>
@@ -188,7 +188,7 @@
                     <a href="" class="btn cta">Get started</a>
                 </div>
 
-                <div class="footer-column">
+                <div class="footer-column footer-link">
                     <p class="footer-title">About</p>
                     <ul>
                         <li><a href="#">Our story</a></li>
@@ -198,7 +198,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-column">
+                <div class="footer-column footer-link">
                     <p class="footer-title">Services</p>
                     <ul>
                         <li><a href="#">Email Marketing</a></li>
@@ -208,7 +208,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-column">
+                <div class="footer-column footer-link">
                     <p class="footer-title">Help</p>
                     <ul>
                         <li><a href="#">FAQs</a></li>
@@ -218,12 +218,10 @@
                     </ul>
                 </div>
 
-                <div class="footer-bottomline">
-                    <div>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                    </div>
-                </div>
+                <ul class="footer-bottomline">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
             </div>
         </div>
     </footer>

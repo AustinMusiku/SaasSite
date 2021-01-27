@@ -1,0 +1,30 @@
+// GRID
+.grid{
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 35em)) 1fr;
+}
+
+.container,
+nav,
+.hero{
+    grid-column: 2/4;
+}
+
+section,
+footer{
+    padding: 8em 0;
+}
+
+// LANDING
+
+header{
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        .hero-img{
+            padding: 5em;
+        }
+    }
+}

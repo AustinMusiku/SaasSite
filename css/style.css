@@ -1,3 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  padding: 1em 2.5em;
+  border: 1px solid black;
+}
+
+.cta {
+  background-color: gray;
+  border: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+}
+nav .nav-links {
+  max-width: 70%;
+}
+nav .nav-links .nav-link {
+  padding: 1em 2em;
+}
+
+.tray {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.tray .tray-item {
+  max-width: 33.33%;
+}
+.tray .tray-item img {
+  max-height: 100px;
+}
+.tray .tray-item .tray-text {
+  padding: 1em;
+  text-align: center;
+}
+.tray .tray-item-benefits {
+  padding: 2em;
+}
+
+.banners {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.banners .banner {
+  flex-direction: row;
+}
+.banners .banner-reverse {
+  flex-direction: row-reverse;
+}
+.banners .banner,
+.banners .banner-reverse {
+  display: flex;
+  align-items: center;
+}
+.banners .banner img,
+.banners .banner-reverse img {
+  height: 300px;
+  width: 50%;
+}
+.banners .banner .banner-text,
+.banners .banner-reverse .banner-text {
+  padding: 2em;
+}
+
+.deck {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2em;
+  width: 100%;
+}
+.deck .card {
+  padding: 2em;
+  max-width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.deck .card .card-header,
+.deck .card .card-body {
+  text-align: center;
+}
+.deck .card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.newsletter .container {
+  text-align: center;
+}
+
+footer {
+  background: grey;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.footer-grid .footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.footer-grid .footer-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.footer-grid .footer-bottomline {
+  grid-column: 1/5;
+  padding: 3em 0 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 35em)) 1fr;
+}
+
+.container,
+nav,
+.hero {
+  grid-column: 2/4;
+}
+
+section,
+footer {
+  padding: 8em 0;
+}
+
+header .hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+header .hero .hero-img {
+  padding: 5em;
+}
 
 /*# sourceMappingURL=style.css.map */
