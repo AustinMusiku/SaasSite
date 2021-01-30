@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap');
+@import 'variables';
+
+*{
+    font-family: 'Karla', sans-serif;
+}
+
+h1{
+    font-size: $fs-xl;
+    font-weight: $fw-700;
+    line-height: 1;
+}
+h2{
+    font-size: $fs-l;
+    font-weight: $fw-400;
+}
+h3{
+    font-size: $fs-sm;
+    font-weight: $fw-700;
+}
+a,
+p{
+    margin: 1em 0 0;
+    font-weight: $fw-400;
+    line-height: 1.6;
+}
+p{
+    font-size: $fs-sm;
+}
+a{
+    font-size: $fs-xs;
+    text-decoration: none;
+    color: $dark;
+}
+
+.section-heading{
+    margin: 0 0 1em;
+    font-size: $fs-l;
+    font-weight: $fw-700;
+    text-align: center;
+}

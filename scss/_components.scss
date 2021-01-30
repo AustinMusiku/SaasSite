@@ -1,14 +1,28 @@
+@import 'variables';
+
+
+// INPUT
+input{
+    padding: .55em 1.25em;
+}
+
 // BUTTONS
 .btn{
-    padding: 1em 2.5em;
-    border: 1px solid black;
-
+    position: relative;
+    display: inline-block;
+    margin: 1em 0 0;
+    text-align: center;
+    border-radius: 3px;
 }
 .cta{
-    background-color: gray;
+    padding: 10px 25px;
+    background-color: $accent;
     border: none;
 }
-
+.fit{
+    margin: 0;
+    max-width: fit-content;
+}
 // ul
 ul{
     display: flex;
@@ -37,18 +51,26 @@ nav{
 // TRAY
 
 .tray{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    // justify-content: space-around;
+    margin: 3em 0 0;
+
+
+    i{
+        font-size: $fs-xxl;
+        color: $light-dark;
+    }
 
     .tray-item{
-        max-width: 33.33%;
 
         img{
             max-height: 100px;
         }
         .tray-text{
-            padding: 1em;
+            padding: .5em;
             text-align: center;
         }
     }
@@ -64,7 +86,7 @@ nav{
 .banners{
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 5em;
 
     .banner{
         flex-direction: row;
@@ -77,14 +99,15 @@ nav{
     .banner-reverse{
         display: flex;
         align-items: center;
+        gap: 3em;
 
         img{
-            height: 300px;
+            height: 200px;
             width: 50%;
         }
     
         .banner-text{
-            padding: 2em;
+            padding: 2em 0;
         }
     }
 }
@@ -101,22 +124,35 @@ nav{
 
     .card{
         padding: 2em;
-        max-width: 33.33%;
+        width: 33.33%;
         display: flex;
         flex-direction: column;
         gap: 1.5em;
+        background-color: $light;
+        border-radius: 5px;
 
         .card-header,
         .card-body{
             text-align: center;
         }
         .card-header{
+            h2{
+                color: $accent;
 
+                span{
+                    font-size: $fs-sm;
+                }
+            }
         }
         .card-body{
             display: flex;
             flex-direction: column;
             gap: .5em;
+        }
+
+        .cta{
+            background-color: $dark-light;
+            color: $accent;
         }
     }
 }
@@ -128,32 +164,5 @@ nav{
 
     .container{
         text-align: center;
-    }
-}
-
-
-// FOOTER
-footer{
-    background: grey;
-}
-.footer-grid{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-
-    .footer-column{
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-
-        ul{
-            display: flex;
-            flex-direction: column;
-            gap: .5em;
-        }
-    }
-
-    .footer-bottomline{
-        grid-column: 1/5;
-        padding: 3em 0 0;
     }
 }

@@ -1,3 +1,5 @@
+@import 'variables';
+
 // GRID
 .grid{
     display: grid;
@@ -16,7 +18,6 @@ footer{
 }
 
 // LANDING
-
 header{
     .hero{
         display: grid;
@@ -25,6 +26,71 @@ header{
 
         .hero-img{
             padding: 5em;
+        }
+    }
+}
+
+
+// PARTNERS
+.partners{
+    // background-color: $accent;
+}
+
+// WHY-US
+.why-us{
+    
+}
+
+
+// ADVANTAGES
+.advantages{
+}
+
+// PRICING
+.pricing{
+
+}
+
+// FOOTER
+footer{
+    background: $dark;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        p{
+            color: $accent;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+
+            li{
+                a, p{
+                    color: $light;
+                    font-weight: $fw-200;
+                }
+            }
+        }
+    }
+
+    .footer-bottomline{
+        grid-column: 1/5;
+        margin: 6em 0 0;
+
+        li{
+            a{
+                color: $light;
+                font-weight: $fw-200;
+            }
         }
     }
 }
