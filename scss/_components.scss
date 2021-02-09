@@ -6,6 +6,7 @@ input{
     padding: .55em 1.25em;
 }
 
+
 // BUTTONS
 .btn{
     position: relative;
@@ -58,6 +59,12 @@ nav{
     // justify-content: space-around;
     margin: 3em 0 0;
 
+    img{
+        width: 100px;
+        margin: 0 auto .5em;
+        display: grid;
+        place-items: center;
+    }
 
     i{
         font-size: $fs-xxl;
@@ -66,9 +73,6 @@ nav{
 
     .tray-item{
 
-        img{
-            max-height: 100px;
-        }
         .tray-text{
             padding: .5em;
             text-align: center;
@@ -86,7 +90,7 @@ nav{
 .banners{
     display: flex;
     flex-direction: column;
-    gap: 5em;
+    gap: 10em;
 
     .banner{
         flex-direction: row;
@@ -102,7 +106,7 @@ nav{
         gap: 3em;
 
         img{
-            height: 200px;
+            max-height: 350px;
             width: 50%;
         }
     
@@ -147,12 +151,40 @@ nav{
         .card-body{
             display: flex;
             flex-direction: column;
-            gap: .5em;
+
+            p{
+                margin: .25em;
+                font-size: $fs-xs;
+            }
         }
 
         .cta{
             background-color: $dark-light;
             color: $accent;
+        }
+    }
+
+    .best{
+        background-color: $secondary;
+
+        .card-header,
+        .card-body{
+            text-align: center;
+            color: $dark-light;
+        }
+        .card-header{
+            h2{
+                color: $light-dark;
+
+                span{
+                    font-size: $fs-sm;
+                }
+            }
+        }
+
+        .cta{
+            background-color: $light-dark;
+            color: $dark-light;
         }
     }
 }

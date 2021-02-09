@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap&family=Karla:wght@200;400;700&display=swap');
 @import 'variables';
 
-*{
+h1,h2,h3,
+a,p,
+button{
     font-family: 'Karla', sans-serif;
 }
 
@@ -31,6 +33,11 @@ a{
     font-size: $fs-xs;
     text-decoration: none;
     color: $dark;
+}
+
+.logo{
+    font-family: 'Faster One' sans-serif;
+    font-size: $fs-l;
 }
 
 .section-heading{

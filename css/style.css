@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&display=swap&family=Karla:wght@200;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -63,12 +63,15 @@ nav .nav-links .nav-link {
   justify-items: center;
   margin: 3em 0 0;
 }
+.tray img {
+  width: 100px;
+  margin: 0 auto 0.5em;
+  display: grid;
+  place-items: center;
+}
 .tray i {
   font-size: 68px;
   color: #414141;
-}
-.tray .tray-item img {
-  max-height: 100px;
 }
 .tray .tray-item .tray-text {
   padding: 0.5em;
@@ -81,7 +84,7 @@ nav .nav-links .nav-link {
 .banners {
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  gap: 10em;
 }
 .banners .banner {
   flex-direction: row;
@@ -97,7 +100,7 @@ nav .nav-links .nav-link {
 }
 .banners .banner img,
 .banners .banner-reverse img {
-  height: 200px;
+  max-height: 350px;
   width: 50%;
 }
 .banners .banner .banner-text,
@@ -134,11 +137,32 @@ nav .nav-links .nav-link {
 .deck .card .card-body {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+}
+.deck .card .card-body p {
+  margin: 0.25em;
+  font-size: 16px;
 }
 .deck .card .cta {
   background-color: #f0f0f0;
   color: #4c4c78;
+}
+.deck .best {
+  background-color: #6c63ff;
+}
+.deck .best .card-header,
+.deck .best .card-body {
+  text-align: center;
+  color: #f0f0f0;
+}
+.deck .best .card-header h2 {
+  color: #414141;
+}
+.deck .best .card-header h2 span {
+  font-size: 20px;
+}
+.deck .best .cta {
+  background-color: #414141;
+  color: #f0f0f0;
 }
 
 .newsletter .container {
@@ -204,7 +228,9 @@ footer {
   font-weight: 200;
 }
 
-* {
+h1, h2, h3,
+a, p,
+button {
   font-family: "Karla", sans-serif;
 }
 
@@ -239,6 +265,11 @@ a {
   font-size: 16px;
   text-decoration: none;
   color: #1d1d1d;
+}
+
+.logo {
+  font-family: "Faster One" sans-serif;
+  font-size: 32px;
 }
 
 .section-heading {
