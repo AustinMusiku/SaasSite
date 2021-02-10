@@ -50,7 +50,6 @@ nav{
 
 
 // TRAY
-
 .tray{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -80,7 +79,7 @@ nav{
     }
 
     .tray-item-benefits{
-        padding: 2em;
+        padding: .5em;
     }
 }
 
@@ -193,8 +192,124 @@ nav{
 // NEWSLETTER
 
 .newsletter{
+    background-color: #303030;
 
     .container{
         text-align: center;
+        display: grid;
+        place-items: center;
+
+        .section-heading{
+            color: $dark-light;
+        }
+
+        .newsletter{
+            display: flex;
+            flex-direction: row;
+
+            input{
+                border: 1px solid #909090;
+                border-right: none;
+                border-radius: 0px;
+                width: 300px;
+                outline: none;
+            }
+            .btn{
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    // NAV
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 12vh;
+
+        .nav-links{
+            max-width: 70%;
+            display: none;
+
+            .nav-link{
+                padding: 1em 2em;
+            }
+        }
+    }
+
+
+    // TRAY
+    .tray{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 3em 0 0;
+    }
+
+    // BANNER
+
+    .banners{
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+        margin: 3em 0 0;
+
+        .banner{
+            flex-direction: column;
+        }
+        .banner-reverse{
+            flex-direction: column;
+        }
+
+        .banner,
+        .banner-reverse{
+            display: flex;
+            align-items: left;
+            gap: .5em;
+
+            img{
+                width: 50%;
+            }
+        
+            .banner-text{
+                padding: 2em;
+                text-align: center;
+            }
+        }
+    }
+
+
+    // DECK
+    .deck{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2em;
+        width: 100%;
+
+        .card{
+            width: 100%;
+        }
+    }
+
+
+    // NEWSLETTER
+    .newsletter{
+        .container{
+
+            .newsletter{
+
+                input{
+                    border: 1px solid #909090;
+                    border-right: none;
+                    border-radius: 0px;
+                    width: 200px;
+                    outline: none;
+                }
+            }
+        }
     }
 }
