@@ -63,15 +63,14 @@ nav .nav-links .nav-link {
   justify-items: center;
   margin: 3em 0 0;
 }
-.tray img {
-  width: 100px;
-  margin: 0 auto 0.5em;
-  display: grid;
-  place-items: center;
-}
 .tray i {
   font-size: 45px;
   color: #414141;
+}
+.tray .tray-item img {
+  width: 100px;
+  display: grid;
+  place-items: center;
 }
 .tray .tray-item .tray-text {
   padding: 0.5em;
@@ -79,6 +78,19 @@ nav .nav-links .nav-link {
 }
 .tray .tray-item-benefits {
   padding: 0.5em;
+}
+
+.tray2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 1em;
+  margin: 3em 0 0;
+}
+.tray2 img {
+  padding: 2em;
+  height: 150px;
 }
 
 .banners {
@@ -100,8 +112,8 @@ nav .nav-links .nav-link {
 }
 .banners .banner img,
 .banners .banner-reverse img {
-  max-height: 350px;
-  width: 50%;
+  max-height: 400px;
+  width: 100%;
 }
 .banners .banner .banner-text,
 .banners .banner-reverse .banner-text {
@@ -113,6 +125,7 @@ nav .nav-links .nav-link {
   flex-direction: row;
   justify-content: space-between;
   gap: 2em;
+  margin: 3em 0 0;
   width: 100%;
 }
 .deck .card {
@@ -122,6 +135,7 @@ nav .nav-links .nav-link {
   flex-direction: column;
   gap: 1.5em;
   background-color: #f8f8f8;
+  box-shadow: 1px 1px 30px 10px #f0f0f0;
   border-radius: 5px;
 }
 .deck .card .card-header,
@@ -143,25 +157,29 @@ nav .nav-links .nav-link {
   font-size: 16px;
 }
 .deck .card .cta {
-  background-color: #f0f0f0;
-  color: #4c4c78;
+  background-color: #f8f8f8;
+  color: #6c63ff;
 }
 .deck .best {
-  background-color: #6c63ff;
+  background-color: white;
+  box-shadow: 1px 1px 30px 10px #f8f8f8;
 }
 .deck .best .card-header,
 .deck .best .card-body {
   text-align: center;
-  color: #f0f0f0;
+  color: #1d1d1d;
 }
 .deck .best .card-header h2 {
-  color: #414141;
+  color: #6c63ff;
 }
 .deck .best .card-header h2 span {
   font-size: 20px;
 }
+.deck .best .card-body p {
+  color: #1d1d1d;
+}
 .deck .best .cta {
-  background-color: #414141;
+  background-color: #6c63ff;
   color: #f0f0f0;
 }
 
@@ -211,6 +229,19 @@ nav .nav-links .nav-link {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 3em 0 0;
+  }
+
+  .tray2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 1em;
+    margin: 3em 0 0;
+  }
+  .tray2 img {
+    padding: 1em;
+    height: 150px;
   }
 
   .banners {
@@ -283,6 +314,10 @@ header .hero {
 }
 header .hero .hero-img {
   padding: 5em;
+}
+
+.advantages {
+  background-color: #f0f0f0;
 }
 
 footer {

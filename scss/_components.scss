@@ -58,12 +58,6 @@ nav{
     // justify-content: space-around;
     margin: 3em 0 0;
 
-    img{
-        width: 100px;
-        margin: 0 auto .5em;
-        display: grid;
-        place-items: center;
-    }
 
     i{
         font-size: $fs-xxl;
@@ -71,6 +65,12 @@ nav{
     }
 
     .tray-item{
+
+        img{
+            width: 100px;
+            display: grid;
+            place-items: center;
+        }
 
         .tray-text{
             padding: .5em;
@@ -80,6 +80,22 @@ nav{
 
     .tray-item-benefits{
         padding: .5em;
+    }
+}
+
+
+// TRAY2
+.tray2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 1em;
+    margin: 3em 0 0;
+
+    img{
+        padding: 2em;
+        height: 150px;
     }
 }
 
@@ -105,8 +121,8 @@ nav{
         gap: 3em;
 
         img{
-            max-height: 350px;
-            width: 50%;
+            max-height: 400px;
+            width: 100%;
         }
     
         .banner-text{
@@ -123,6 +139,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     gap: 2em;
+    margin: 3em 0 0;
     width: 100%;
 
     .card{
@@ -132,6 +149,7 @@ nav{
         flex-direction: column;
         gap: 1.5em;
         background-color: $light;
+        box-shadow: 1px 1px 30px 10px $dark-light;
         border-radius: 5px;
 
         .card-header,
@@ -158,22 +176,22 @@ nav{
         }
 
         .cta{
-            background-color: $dark-light;
-            color: $accent;
+            background-color: $light;
+            color: $secondary;
         }
     }
 
     .best{
-        background-color: $secondary;
-
+        background-color: white;
+        box-shadow: 1px 1px 30px 10px $light;
         .card-header,
         .card-body{
             text-align: center;
-            color: $dark-light;
+            color: $dark;
         }
         .card-header{
             h2{
-                color: $light-dark;
+                color: $secondary;
 
                 span{
                     font-size: $fs-sm;
@@ -181,11 +199,19 @@ nav{
             }
         }
 
+        .card-body{
+            p{
+                color: $dark;
+            }
+        }
+
         .cta{
-            background-color: $light-dark;
+            background-color: $secondary;
             color: $dark-light;
         }
     }
+
+    
 }
 
 
@@ -248,6 +274,22 @@ nav{
         grid-template-columns: repeat(1, 1fr);
         margin: 3em 0 0;
     }
+
+
+    .tray2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 1em;
+        margin: 3em 0 0;
+    
+        img{
+            padding: 1em;
+            height: 150px;
+        }
+    }
+
 
     // BANNER
 
