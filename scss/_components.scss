@@ -43,7 +43,31 @@ nav{
         max-width: 70%;
 
         .nav-link{
-            padding: 1em 2em;
+            position: relative;
+            
+        }
+        .nav-link-section{
+            width: 20%;
+            padding:  1em 2em;
+        }
+        .btn{
+            display: inline;
+            margin: 0 0 0 3em;
+            padding:  1em 2em;
+        }
+        .nav-link .nav-link-section::after{
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -.5em;
+            background-color: $secondary;
+            transition: .25s;
+        }
+        .nav-link .nav-link-section:hover::after{
+            width: 70%;
         }
     }
 }

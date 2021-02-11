@@ -53,7 +53,30 @@ nav .nav-links {
   max-width: 70%;
 }
 nav .nav-links .nav-link {
+  position: relative;
+}
+nav .nav-links .nav-link-section {
+  width: 20%;
   padding: 1em 2em;
+}
+nav .nav-links .btn {
+  display: inline;
+  margin: 0 0 0 3em;
+  padding: 1em 2em;
+}
+nav .nav-links .nav-link .nav-link-section::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.5em;
+  background-color: #6c63ff;
+  transition: 0.25s;
+}
+nav .nav-links .nav-link .nav-link-section:hover::after {
+  width: 70%;
 }
 
 .tray {
