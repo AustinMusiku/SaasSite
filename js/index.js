@@ -65,7 +65,7 @@ header
     .from( heroImg , .25, {
         x: '70',
         opacity: 0,
-        ease: 'power1.out'
+        ease: 'power3.out'
     })
 
 menu.addEventListener('click', () => {
