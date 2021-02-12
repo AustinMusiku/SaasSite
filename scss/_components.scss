@@ -18,6 +18,7 @@ input{
 .cta{
     padding: 10px 25px;
     background-color: $accent;
+    color: $light;
     border: none;
 }
 .fit{
@@ -70,6 +71,10 @@ nav{
             width: 70%;
         }
     }
+
+    .menu{
+        display: none;
+    }
 }
 
 
@@ -107,7 +112,6 @@ nav{
     }
 }
 
-
 // TRAY2
 .tray2{
     display: grid;
@@ -123,9 +127,7 @@ nav{
     }
 }
 
-
 // BANNER
-
 .banners{
     display: flex;
     flex-direction: column;
@@ -145,7 +147,7 @@ nav{
         gap: 3em;
 
         img{
-            max-height: 400px;
+            max-height: 300px;
             width: 100%;
         }
     
@@ -157,7 +159,6 @@ nav{
 
 
 // DECK
-
 .deck{
     display: flex;
     flex-direction: row;
@@ -240,7 +241,6 @@ nav{
 
 
 // NEWSLETTER
-
 .newsletter{
     background-color: #303030;
 
@@ -282,12 +282,59 @@ nav{
         height: 12vh;
 
         .nav-links{
-            max-width: 70%;
-            display: none;
+            position: absolute;
+            flex-direction: column;
+            padding: 5em 2em;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -100%;
+            z-index: 1000;
+            background-color: $dark;
 
             .nav-link{
-                padding: 1em 2em;
+                margin: auto;
+                padding: 1em 0;
+                width: fit-content;
+
+                .nav-link-section{
+                    margin: auto;
+                    text-align: center;
+                    font-size: $fs-sm;
+                    color: $dark-light;
+                }
+                .btn{
+                    margin: 0;
+                    color: $light;
+                }
             }
+        }
+
+        .menu{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 45px;
+            height: 14px;
+            z-index: 10000;
+    
+            .ham{
+                position: relative;
+                width: 100%;
+                height: 2px;
+                background-color: $dark;
+            }
+    
+            .ham:nth-of-type(2){
+                width: 70%;
+                right: 0;
+            }
+        }
+
+        .active-nav{
+            
         }
     }
 
@@ -341,7 +388,7 @@ nav{
             }
         
             .banner-text{
-                padding: 2em;
+                padding: 2em 0;
                 text-align: center;
             }
         }

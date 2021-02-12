@@ -24,6 +24,12 @@ header{
         grid-template-columns: 1fr 1fr;
         align-items: center;
 
+        .hero-text{
+            .btn{
+                margin-top: 2em;
+            }
+        }
+
         .hero-img{
             padding: 5em;
         }
