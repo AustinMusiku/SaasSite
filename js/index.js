@@ -5,6 +5,15 @@ let hamOne = menu.querySelectorAll('.ham-one');
 let hamTwo = menu.querySelectorAll('.ham-two');
 
 let hero = document.querySelector('.hero');
+let heroTxt = document.querySelector('.hero-text');
+let heroTxtP = heroTxt.querySelector('h1');
+let heroTxtBody = heroTxt.querySelector('p');
+let heroTxtA = heroTxt.querySelector('a');
+let heroTxtItems = [ heroTxtP, heroTxtBody, heroTxtA ]
+let heroImg = hero.querySelector('.hero-img');
+let heroItems = [ heroTxt,heroImg ]
+
+
 let sections = document.querySelectorAll('section');
 let sectionheadings = document.querySelectorAll('.section-heading');
 
@@ -43,6 +52,16 @@ navSlide
         .to(hamOne, .125, { rotation: 45, scaleX: .75 }, 'cross')
         .to(hamTwo, .125, { rotation: -45, scaleX: .75 }, 'cross');
 
+
+let header = gsap.timeline();
+
+header
+    .from(heroTxtItems, .35, {
+        x: '-70',
+        opacity: 0,
+        stagger: .35,
+        ease: 'power1.out'
+    })
 
 menu.addEventListener('click', () => {
     // mobileNav.classList.toggle('activeNav');
