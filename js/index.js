@@ -17,6 +17,10 @@ let heroItems = [ heroTxt,heroImg ]
 let sections = document.querySelectorAll('section');
 let sectionheadings = document.querySelectorAll('.section-heading');
 
+// ##select banners
+let banners = gsap.utils.toArray('.banner, .banner-reverse');
+
+
 // gsap timelines
 let navSlide = gsap.timeline({
     paused: true,
@@ -55,6 +59,15 @@ navSlide
 
 let header = gsap.timeline();
 
+menu.addEventListener('click', () => {
+    // mobileNav.classList.toggle('activeNav');
+    menu.classList.toggle('active-nav');
+
+    navSlide.reversed() ? navSlide.play() : navSlide.reverse();
+});
+
+
+// Header animations
 header
     .from(heroTxtItems, .35, {
         x: '-70',
@@ -66,11 +79,26 @@ header
         x: '70',
         opacity: 0,
         ease: 'power3.out'
-    })
+    });
 
-menu.addEventListener('click', () => {
-    // mobileNav.classList.toggle('activeNav');
-    menu.classList.toggle('active-nav');
 
-    navSlide.reversed() ? navSlide.play() : navSlide.reverse();
-})
+
+let bannerAnimation = gsap.timeline({
+    scrollTrigger: {
+        trigger: banners.forEach( banner => {
+            banner;
+            console.log(banner);
+            }),
+        start: 'top top'       
+    },
+    stagger: .1
+});
+
+banners.forEach( banner => {
+
+    bannerAnimation.from( banner, {
+            y: 30,
+            opacity: 0
+    });
+    console.log(banner);
+});
