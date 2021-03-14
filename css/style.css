@@ -372,6 +372,9 @@ footer {
   padding: 8em 0;
 }
 
+header {
+  background-color: #f0f0f0;
+}
 header .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
